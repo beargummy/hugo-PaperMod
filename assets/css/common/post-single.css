@@ -156,7 +156,7 @@
 .post-content .highlight:not(table),
 .post-content pre {
     margin: 10px auto;
-    background: var(--hljs-bg) !important;
+    background: var(--code-bg) !important;
     border-radius: var(--radius);
 }
 
@@ -372,7 +372,7 @@ h6:hover .anchor {
 }
 
 .post-content :not(table) ::-webkit-scrollbar-thumb {
-    border: 2px solid var(--hljs-bg);
+    border: 2px solid var(--code-bg);
     background: rgba(255, 255, 255, 0.32);
 }
 
