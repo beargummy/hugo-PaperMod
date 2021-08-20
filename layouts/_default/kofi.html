@@ -1,0 +1,10 @@
+{{ $color := "142d38" }}
+{{ if .Param "kofi.kofiColor" }}
+    {{ $color = .Param "kofi.kofiColor" }}
+{{ end }}
+<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+<script type='text/javascript'>
+    const kofiId = '{{ .Param "kofi.kofiId" }}';
+    kofiwidget2.init('{{ .Param "kofi.kofiText" }}', '#{{ $color }}', kofiId);
+    kofiwidget2.draw();
+</script> 

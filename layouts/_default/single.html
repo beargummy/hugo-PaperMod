@@ -44,6 +44,9 @@
     {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
     {{- partial "share_icons.html" . -}}
     {{- end }}
+    {{- if (.Param "kofi.enableKofi") }}
+    {{ partial "kofi.html" . }}
+    {{- end }}
   </footer>
 
   {{- if (.Param "comments") }}
